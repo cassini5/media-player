@@ -1,0 +1,44 @@
+.button {    
+    inline-size: 32px;
+    block-size: 32px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.button-sm {
+    inline-size: 16px;
+    block-size: 16px;
+}
+.button:active{
+    transform: scale(.9);
+}
+#play {
+    background-image: url('../images/play.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#pause {
+    background-image: url('../images/pause.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#forward {
+    background-image: url('../images/+10s.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#backward {
+    background-image: url('../images/-10s.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#muted {    
+    background-image: url('../images/volume-mute2.svg');
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+#sound {    
+    background-image: url('../images/volume-high.svg');
+    background-repeat: no-repeat;
+    background-position: center;    
+}

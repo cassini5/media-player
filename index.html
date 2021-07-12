@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de video</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    
+</head>
+<body>    
+    <div class="wrapper">
+        <div class="player">
+            <!-- <video id="video" poster="./images/poster.jpg" src="./video/lofi.mp4"></video> -->
+            <video id="video" poster="./images/poster.jpg" src="https://media.w3.org/2010/05/sintel/trailer.mp4"></video>
+            <div class="player-overlay">
+                <h2 class="player-title">Música para programar</h2>
+                <div class="player-actions">
+                    <button class="button" id="backward" aria-label="Retroceder" title="Retroceder"></button>
+                    <button class="button" id="play" aria-label="Reproducir" title="Reproducir"></button>
+                    <button class="button" hidden id="pause" aria-label="Pausar" title="Pausar"></button>
+                    <button class="button" id="forward" aria-label="Adelantar" title="Adelantar"></button>
+                </div>
+                <div class="controls">
+                    <div class="player-progress">                        
+                        <input id="progress" type="range" min="0" value="0" step="1">
+                    </div>
+                    <div class="player-options">                        
+                        <button class="button" id="muted" aria-label="Silenciar" title="Silenciar"></button>
+                        <button class="button" hidden id="sound" aria-label="Sonido" title="Sonido"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <script src="./js/script.js"></script>    
+</body>
+</html>
